@@ -1,7 +1,5 @@
 window.onload = function() {
     loadTasks();
-    
-    // Add event listener for "Enter" key press to add task
     document.getElementById('inputbox').addEventListener('keypress', function(e) {
         if (e.key === 'Enter') {
             addTask();
@@ -29,7 +27,7 @@ function addTask() {
     if (taskText !== "") {
         addTaskToDOM(taskText, false);
         saveNewTask(taskText);
-        document.getElementById('inputbox').value = ''; // Clear input
+        document.getElementById('inputbox').value = ''; 
     }
 }
 
