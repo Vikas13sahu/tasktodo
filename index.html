@@ -6,11 +6,16 @@
     <title>To-Do List</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="Todo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 </head>
 <body>
     <div class="container">
         <div class="Box">
             <h2>To Do List <i class="fa-solid fa-list"></i></h2>
+            <div class="row">
+                <input type="datetime-local" id="reminderTime" placeholder="Set reminder time">
+            </div>
             <div class="row">
                 <input type="text" placeholder="Write here ...." id="inputbox">
                 <button onclick="addTask()">Add</button>
@@ -18,6 +23,8 @@
             <ul id="List"></ul>
         </div>
     </div>
+    <!-- Sound notification -->
+    <audio id="notificationSound" src="https://www.soundjay.com/button/beep-07.wav"></audio>
     <script src="Todo.js"></script>
 </body>
 </html>
