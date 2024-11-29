@@ -32,6 +32,7 @@ h2 i {
     margin-left: 10px;
     color: #007bff;
 }
+
 .row {
     display: flex;
     gap: 10px;
@@ -40,6 +41,13 @@ h2 i {
 
 #inputbox {
     flex: 1;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+#reminderTime {
     padding: 10px;
     border-radius: 4px;
     border: 1px solid #ccc;
@@ -55,6 +63,7 @@ button {
     font-size: 16px;
     cursor: pointer;
 }
+
 button:hover {
     background-color: #0056b3;
 }
@@ -85,7 +94,6 @@ ul {
     text-decoration: line-through;
     color: gray;
 }
-
 
 .deleteBtn {
     background: none;
